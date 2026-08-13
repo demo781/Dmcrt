@@ -1,11 +1,11 @@
-# pages.py  -  RVG Gateway v9.2
+# pages.py  -  Democrat Gateway v9.2
 # شامل: LOGIN_HTML, DASHBOARD_HTML, get_public_page_html()
 
 LOGIN_HTML = r"""<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ورود · RVG Gateway</title>
+<title>ورود · DEMOCR4T Gateway</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
@@ -232,7 +232,7 @@ input:focus~.ic-lock{color:var(--accent2);animation:wiggle .4s ease}
     <div class="hint">
       <i class="ti ti-info-circle"></i>
       <span class="hint-label">رمز پیش‌فرض سیستم</span>
-      <span class="hint-val" tabindex="0" role="button" onclick="fillDefault()" onkeydown="if(event.key==='Enter')fillDefault()">123456</span>
+      <span class="hint-val" tabindex="0" role="button" onclick="fillDefault()" onkeydown="if(event.key==='Enter')fillDefault()">dmrct</span>
     </div>
 
     <form id="form" novalidate>
@@ -247,7 +247,7 @@ input:focus~.ic-lock{color:var(--accent2);animation:wiggle .4s ease}
       <button class="btn" type="submit" id="btn"><i class="ti ti-login-2"></i> ورود به داشبورد</button>
     </form>
 
-    <div class="footer">کانال رسمی<a href="https://t.me/CodeBoxo" target="_blank" rel="noopener"><i class="ti ti-brand-telegram"></i>@CodeBoxo</a></div>
+    <div class="footer">کانال رسمی<a href="https://t.me/Democr4t" target="_blank" rel="noopener"><i class="ti ti-brand-telegram"></i>@k1zmk</a></div>
   </div>
 </div>
 
@@ -270,7 +270,7 @@ applyTheme(isDark);
 
 function fillDefault(){
   const pw = document.getElementById('pw');
-  pw.value = '123456';
+  pw.value = 'dmrct';
   pw.focus();
 }
 
@@ -340,7 +340,7 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RVG Gateway · codebox</title>
+<title>DEMOCR4T Gateway · k1zmk</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
@@ -2292,8 +2292,8 @@ a{color:inherit;text-decoration:none}
     </div>
   </div>
   <div class="dash-footer">
-    <span class="df-text">codebox RVG Gateway v9.2 · Railway · 2025</span>
-    <a class="df-link" href="https://t.me/CodeBoxo" target="_blank"><i class="ti ti-brand-telegram"></i> t.me/CodeBoxo</a>
+    <span class="df-text">codebox DEMOCR4T Gateway v9.2 · Railway · 2025</span>
+    <a class="df-link" href="https://t.me/Democr4t" target="_blank"><i class="ti ti-brand-telegram"></i> t.me/CodeBoxo</a>
   </div>
 </section>
 <section class="pg" id="pg-links">
@@ -2617,7 +2617,7 @@ a{color:inherit;text-decoration:none}
     <div class="sup-head">
       <div class="sup-head-icon"><i class="ti ti-headset"></i></div>
       <div class="sup-head-text">
-        <div class="sup-head-title">پشتیبانی RVG</div>
+        <div class="sup-head-title">پشتیبانی DEMOCRAT</div>
         <div class="sup-head-sub"><span class="sdot"></span> معمولاً در کمتر از چند ساعت پاسخ داده می‌شود</div>
       </div>
     </div>
@@ -3971,7 +3971,7 @@ async function loadSupportMsgs() {
       const hasNew = lastAdmin && lastAdmin.id !== seenId && !onSupportPage;
       nb.style.display = hasNew ? 'inline-flex' : 'none';
       if (lastAdmin && onSupportPage)
-        localStorage.setItem('rvg-last-seen-support-msg', lastAdmin.id);
+        localStorage.setItem('democr4t-last-seen-support-msg', lastAdmin.id);
     }
   } catch (e) {
     // silent fail
@@ -5196,17 +5196,17 @@ html,body{{min-height:100%;background:var(--bg);font-family:var(--serif);color:v
   <div class="top">
     <div class="brand">
       <div class="brand-img"><img src="https://yt3.googleusercontent.com/vA6bYj1V386YmibpWRNFJtsRRqwfY_U9wnb7gmW90eRVXyNB7gAfjj1XPs5UX0cdKdQprrI=s160-c-k-c0x00ffffff-no-rj" alt="cb"></div>
-      <div><div class="brand-name">codebox</div><div class="brand-sub">RVG Gateway · v9.2</div></div>
+      <div><div class="brand-name">codebox</div><div class="brand-sub">DEMOCR4T Gateway · v9.2</div></div>
     </div>
     <div class="top-actions">
       <button class="icon-btn" id="theme-toggle" onclick="toggleTheme()" title="تغییر تم"><i class="ti ti-sun" id="theme-icon"></i></button>
-      <a class="icon-btn" href="https://t.me/CodeBoxo" target="_blank" title="کانال تلگرام"><i class="ti ti-brand-telegram"></i></a>
+      <a class="icon-btn" href="https://t.me/democ4t" target="_blank" title="کانال تلگرام"><i class="ti ti-brand-telegram"></i></a>
     </div>
   </div>
   <div id="root">
     <div class="empty-state"><i class="ti ti-loader-2" style="animation:spin 1s linear infinite"></i>در حال بارگذاری...</div>
   </div>
-  <div class="footer">کانال رسمی: <a href="https://t.me/CodeBoxo" target="_blank">@CodeBoxo</a> · RVG Gateway v9.2</div>
+  <div class="footer">کانال رسمی: <a href="https://t.me/democr4t" target="_blank">@CodeBoxo</a> · RVG Gateway v9.2</div>
 </div>
 <script>
 const UUID_KEY='{uuid_key}';
